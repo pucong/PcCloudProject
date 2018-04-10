@@ -1,0 +1,16 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.31.127:8761/eureka/
+server:
+  port: 8764
+spring:
+  application:
+    name: service-two
+  datasource:
+    url: jdbc:mysql://localhost:3306/activity?characterEncoding=utf8&useSSL=true
+    username: root
+    password: qazwsx123
+    driver-class-name: com.mysql.jdbc.Driver

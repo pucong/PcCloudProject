@@ -1,0 +1,19 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://192.168.31.127:${server.port}/eureka/
+management:
+  health:
+    mail:
+      enabled: false
+  server:
+    port: 54001
+spring:
+  application:
+    name: discoveryServer
