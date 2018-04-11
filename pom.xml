@@ -25,6 +25,7 @@
         <module>businessTwo</module>
         <module>feignOne</module>
         <module>feignTwo</module>
+        <module>serviceZuul</module>
     </modules>
 
     <properties>
