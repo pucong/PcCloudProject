@@ -1,0 +1,14 @@
+server:
+  port: 8771
+spring:
+  profiles: peer1
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          password:
+          username:
+          uri: https://github.com/pucong/SpringcloudConfig/
+          search-paths: respon
+      label: master

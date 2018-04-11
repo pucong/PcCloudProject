@@ -26,6 +26,7 @@
         <module>feignOne</module>
         <module>feignTwo</module>
         <module>serviceZuul</module>
+        <module>configServer</module>
     </modules>
 
     <properties>
