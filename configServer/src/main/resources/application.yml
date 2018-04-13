@@ -8,4 +8,13 @@ spring:
   profiles:
     default: peer1
   application:
-    name: configServer
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          password:
+          username:
+          uri: https://github.com/pucong/SpringcloudConfig/
+          search-paths: respon
+      label: master

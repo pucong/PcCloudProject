@@ -11,11 +11,17 @@ public class indexController {
     @Value("${server.port}")
     String port;
 
-//    @Value("${foo}")
+    @Value("${pc.user-name}")
     String foo;
 
     @RequestMapping("/hi")
     public String home(@RequestParam String name) {
         return "hi "+name+",i am from port:" +port;
     }
+
+    @RequestMapping("/getUser")
+    public String getUser(@RequestParam String name) {
+        return "hi "+foo;
+    }
+
 }
