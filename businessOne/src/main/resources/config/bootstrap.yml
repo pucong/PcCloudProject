@@ -18,9 +18,14 @@ spring:
         enabled: true
         service-id: config-server
       fail-fast: true
+#  boot:
+#    admin:
+#      url: http://192.168.31.127:8773
 eureka:
   instance:
     prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://192.168.31.127:8761/eureka/
+info:
+  version: '@project.version@'

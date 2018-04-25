@@ -14,3 +14,11 @@ spring:
     username: root
     password: qazwsx123
     driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    config:
+#      label: service
+#      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+      fail-fast: true

@@ -5,7 +5,7 @@
 
 	<groupId>com.pc.cloud</groupId>
 	<artifactId>feign-two</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>feign-two</name>
