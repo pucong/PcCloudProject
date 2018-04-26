@@ -13,7 +13,7 @@ zuul:
   routes:
     api-a:
       path: /api-a/**
-      serviceId: service-one
+      serviceId: business-one
     api-b:
       path: /api-b/**
-      serviceId: service-two
+      serviceId: business-two
