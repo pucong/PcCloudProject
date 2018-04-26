@@ -8,7 +8,7 @@ server:
   port: 8764
 spring:
   application:
-    name: service-two
+    name: business-two
   datasource:
     url: jdbc:mysql://localhost:3306/activity?characterEncoding=utf8&useSSL=true
     username: root

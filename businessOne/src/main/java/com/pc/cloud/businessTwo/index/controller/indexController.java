@@ -1,5 +1,7 @@
 package com.pc.cloud.businessTwo.index.controller;
 
+import com.pc.cloud.businessTwo.index.mapper.SchedualServiceHi;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,6 +16,9 @@ public class indexController {
     @Value("${pc.user-name}")
     String foo;
 
+    @Autowired
+    SchedualServiceHi schedualServiceHi;
+
     @RequestMapping("/hi")
     public String home(@RequestParam String name) {
         return "hi "+name+",i am from port:" +port;
@@ -21,7 +26,7 @@ public class indexController {
 
     @RequestMapping("/getUser")
     public String getUser(@RequestParam String name) {
-        return "hi "+foo;
+        return schedualServiceHi.sayHiFromClientOne(name);
     }
 
 }
